@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - About Us</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation (same as index.html) -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <div>
+            <a href="index.html" class="flex items-center py-4 px-2">
+              <span class="font-semibold text-gray-500 text-lg">ShopEase</span>
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link font-medium">About</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="references.html" class="nav-link">References</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hidden mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Home</a></li>
+        <li><a href="about.html" class="block px-4 py-2 text-sm hover:bg-gray-200">About</a></li>
+        <li><a href="products.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Products</a></li>
+        <li><a href="contact.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Contact</a></li>
+        <li><a href="references.html" class="block px-4 py-2 text-sm hover:bg-gray-200">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Us Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-12">About ShopEase</h1>
+      
+      <div class="flex flex-col md:flex-row items-center mb-12">
+        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+          <h2 class="text-2xl font-semibold mb-4">Our Story</h2>
+          <p class="text-gray-600 mb-4">
+            Founded in 2023, ShopEase began with a simple mission: to make online shopping effortless and enjoyable. 
+            What started as a small team of passionate individuals has grown into a trusted ecommerce platform serving 
+            thousands of customers nationwide.
+          </p>
+          <p class="text-gray-600">
+            We carefully curate our product selection to bring you the best quality items at competitive prices, 
+            all while providing exceptional customer service.
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+               alt="Our Team" class="rounded-lg shadow-lg w-full">
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row-reverse items-center mb-12">
+        <div class="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+          <h2 class="text-2xl font-semibold mb-4">Our Mission</h2>
+          <p class="text-gray-600 mb-4">
+            At ShopEase, we're committed to revolutionizing your online shopping experience. 
+            We believe in transparency, quality, and putting our customers first.
+          </p>
+          <p class="text-gray-600">
+            Our platform is designed to be intuitive and user-friendly, with fast shipping, 
+            easy returns, and 24/7 customer support to ensure your complete satisfaction.
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+               alt="Our Mission" class="rounded-lg shadow-lg w-full">
+        </div>
+      </div>
+
+      <div class="bg-gray-100 p-8 rounded-lg">
+        <h2 class="text-2xl font-semibold mb-6 text-center">Website Layout</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-3">Navigation</h3>
+            <p class="text-gray-600">
+              Our intuitive menu system allows you to easily browse between Home, About, Products, Contact, and References pages.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-3">Product Categories</h3>
+            <p class="text-gray-600">
+              Products are organized into clear categories with detailed information to help you make informed purchasing decisions.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-3">Contact System</h3>
+            <p class="text-gray-600">
+              Our contact page features a simple form to reach our support team, along with location information and social media links.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as index.html) -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-xl font-semibold mb-4">ShopEase</h3>
+          <p class="text-gray-400">Your trusted online shopping destination</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="about.html" class="footer-link">About</a></li>
+              <li><a href="products.html" class="footer-link">Products</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-4">Help</h4>
+            <ul class="space-y-2">
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+              <li><a href="#" class="footer-link">FAQs</a></li>
+              <li><a href="#" class="footer-link">Shipping</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="references.html" class="footer-link">References</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">&copy; 2023 ShopEase. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
