@@ -1,63 +1,33 @@
-// Mobile Menu Toggle
-const mobileMenuButton = document.getElementById('menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-
-if (mobileMenuButton && mobileMenu) {
-  mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-}
-
-// Contact Form Submission
-const contactForm = document.getElementById('contact-form');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // In a real application, you would send the form data to a server here
-    // For this demo, we'll just redirect to the thank-you page
-    window.location.href = 'thank-you.html';
-  });
-}
-
-// Add active class to current page in navigation
-document.addEventListener('DOMContentLoaded', () => {
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav-link, .mobile-menu a');
-  
-  navLinks.forEach(link => {
-    const linkHref = link.getAttribute('href');
-    if (linkHref === currentPage) {
-      link.classList.add('text-blue-600');
-      link.classList.remove('text-gray-500');
-    }
-  });
-
-  // Add hover effects for footer links
-  const footerLinks = document.querySelectorAll('.footer-link');
-  footerLinks.forEach(link => {
-    link.addEventListener('mouseenter', () => {
-      link.classList.add('text-white');
-    });
-    link.addEventListener('mouseleave', () => {
-      link.classList.remove('text-white');
-    });
-  });
+// Mobile menu toggle
+document.getElementById('menu-btn').addEventListener('click', function() {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
 });
 
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    
-    const targetId = this.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-    
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth'
+// Product filtering functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const categoryLinks = document.querySelectorAll('.category-link');
+  const productCards = document.querySelectorAll('.product-card');
+
+  categoryLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Remove active class from all links
+      categoryLinks.forEach(l => l.classList.remove('active'));
+      
+      // Add active class to clicked link
+      this.classList.add('active');
+      
+      const category = this.dataset.category;
+      
+      // Filter products
+      productCards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
       });
-    }
+    });
   });
 });
