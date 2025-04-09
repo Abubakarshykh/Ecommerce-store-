@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Products</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation (same as index.html) -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <div>
+            <a href="index.html" class="flex items-center py-4 px-2">
+              <span class="font-semibold text-gray-500 text-lg">ShopEase</span>
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="products.html" class="nav-link font-medium">Products</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="references.html" class="nav-link">References</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hidden mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Home</a></li>
+        <li><a href="about.html" class="block px-4 py-2 text-sm hover:bg-gray-200">About</a></li>
+        <li><a href="products.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Products</a></li>
+        <li><a href="contact.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Contact</a></li>
+        <li><a href="references.html" class="block px-4 py-2 text-sm hover:bg-gray-200">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Products Section -->
+  <div class="container mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Products</h1>
+    
+    <div class="flex flex-col md:flex-row">
+      <!-- Sidebar Categories -->
+      <div class="md:w-1/4 mb-8 md:mb-0 md:pr-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h2 class="text-xl font-semibold mb-4">Categories</h2>
+          <ul class="space-y-2">
+            <li><a href="#electronics" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Electronics</a></li>
+            <li><a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Home & Kitchen</a></li>
+            <li><a href="#fashion" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Fashion</a></li>
+            <li><a href="#beauty" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Beauty</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Product Tables -->
+      <div class="md:w-3/4">
+        <!-- Electronics Category -->
+        <section id="electronics" class="mb-12">
+          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">Electronics</h2>
+          <div class="overflow-x-auto">
+            <table class="min-w-full bg-white rounded-lg overflow-hidden">
+              <thead class="bg-gray-100">
+                <tr>
+                  <th class="py-3 px-4 text-left">Product</th>
+                  <th class="py-3 px-4 text-left">Description</th>
+                  <th class="py-3 px-4 text-left">Price</th>
+                  <th class="py-3 px-4 text-left">Rating</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="py-4 px-4">Smartphone X</td>
+                  <td class="py-4 px-4">6.5" AMOLED display, 128GB storage</td>
+                  <td class="py-4 px-4">$699.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Wireless Earbuds</td>
+                  <td class="py-4 px-4">Noise cancelling, 20hr battery</td>
+                  <td class="py-4 px-4">$129.99</td>
+                  <td class="py-4 px-4">★★★★★</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">4K Smart TV</td>
+                  <td class="py-4 px-4">55" LED, HDR, Smart features</td>
+                  <td class="py-4 px-4">$499.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Laptop Pro</td>
+                  <td class="py-4 px-4">15.6", 16GB RAM, 512GB SSD</td>
+                  <td class="py-4 px-4">$999.99</td>
+                  <td class="py-4 px-4">★★★★★</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Smart Watch</td>
+                  <td class="py-4 px-4">Fitness tracking, heart rate monitor</td>
+                  <td class="py-4 px-4">$199.99</td>
+                  <td class="py-4 px-4">★★★☆☆</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Home & Kitchen Category -->
+        <section id="home" class="mb-12">
+          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">Home & Kitchen</h2>
+          <div class="overflow-x-auto">
+            <table class="min-w-full bg-white rounded-lg overflow-hidden">
+              <thead class="bg-gray-100">
+                <tr>
+                  <th class="py-3 px-4 text-left">Product</th>
+                  <th class="py-3 px-4 text-left">Description</th>
+                  <th class="py-3 px-4 text-left">Price</th>
+                  <th class="py-3 px-4 text-left">Rating</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="py-4 px-4">Air Fryer</td>
+                  <td class="py-4 px-4">5.8QT capacity, digital controls</td>
+                  <td class="py-4 px-4">$89.99</td>
+                  <td class="py-4 px-4">★★★★★</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Blender</td>
+                  <td class="py-4 px-4">1500W, 8-speed control</td>
+                  <td class="py-4 px-4">$59.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Coffee Maker</td>
+                  <td class="py-4 px-4">12-cup programmable</td>
+                  <td class="py-4 px-4">$49.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Cookware Set</td>
+                  <td class="py-4 px-4">10-piece non-stick</td>
+                  <td class="py-4 px-4">$129.99</td>
+                  <td class="py-4 px-4">★★★★★</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Robot Vacuum</td>
+                  <td class="py-4 px-4">Smart mapping, self-charging</td>
+                  <td class="py-4 px-4">$249.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Fashion Category -->
+        <section id="fashion" class="mb-12">
+          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">Fashion</h2>
+          <div class="overflow-x-auto">
+            <table class="min-w-full bg-white rounded-lg overflow-hidden">
+              <thead class="bg-gray-100">
+                <tr>
+                  <th class="py-3 px-4 text-left">Product</th>
+                  <th class="py-3 px-4 text-left">Description</th>
+                  <th class="py-3 px-4 text-left">Price</th>
+                  <th class="py-3 px-4 text-left">Rating</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="py-4 px-4">Men's Jeans</td>
+                  <td class="py-4 px-4">Slim fit, stretch denim</td>
+                  <td class="py-4 px-4">$49.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Women's Dress</td>
+                  <td class="py-4 px-4">Summer floral, midi length</td>
+                  <td class="py-4 px-4">$39.99</td>
+                  <td class="py-4 px-4">★★★★★</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Running Shoes</td>
+                  <td class="py-4 px-4">Lightweight, cushioned</td>
+                  <td class="py-4 px-4">$79.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Leather Jacket</td>
+                  <td class="py-4 px-4">Genuine leather, biker style</td>
+                  <td class="py-4 px-4">$199.99</td>
+                  <td class="py-4 px-4">★★★★★</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Wool Coat</td>
+                  <td class="py-4 px-4">Winter warm, double-breasted</td>
+                  <td class="py-4 px-4">$149.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Beauty Category -->
+        <section id="beauty">
+          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">Beauty</h2>
+          <div class="overflow-x-auto">
+            <table class="min-w-full bg-white rounded-lg overflow-hidden">
+              <thead class="bg-gray-100">
+                <tr>
+                  <th class="py-3 px-4 text-left">Product</th>
+                  <th class="py-3 px-4 text-left">Description</th>
+                  <th class="py-3 px-4 text-left">Price</th>
+                  <th class="py-3 px-4 text-left">Rating</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="py-4 px-4">Facial Serum</td>
+                  <td class="py-4 px-4">Vitamin C, brightening</td>
+                  <td class="py-4 px-4">$29.99</td>
+                  <td class="py-4 px-4">★★★★★</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Hair Dryer</td>
+                  <td class="py-4 px-4">Ionic, 1875W</td>
+                  <td class="py-4 px-4">$59.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Lipstick Set</td>
+                  <td class="py-4 px-4">5 matte shades</td>
+                  <td class="py-4 px-4">$24.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Perfume</td>
+                  <td class="py-4 px-4">Floral scent, 3.4oz</td>
+                  <td class="py-4 px-4">$89.99</td>
+                  <td class="py-4 px-4">★★★★★</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4">Makeup Brushes</td>
+                  <td class="py-4 px-4">12-piece synthetic set</td>
+                  <td class="py-4 px-4">$34.99</td>
+                  <td class="py-4 px-4">★★★★☆</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (same as index.html) -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-xl font-semibold mb-4">ShopEase</h3>
+          <p class="text-gray-400">Your trusted online shopping destination</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="about.html" class="footer-link">About</a></li>
+              <li><a href="products.html" class="footer-link">Products</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-4">Help</h4>
+            <ul class="space-y-2">
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+              <li><a href="#" class="footer-link">FAQs</a></li>
+              <li><a href="#" class="footer-link">Shipping</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="references.html" class="footer-link">References</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">&copy; 2023 ShopEase. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
