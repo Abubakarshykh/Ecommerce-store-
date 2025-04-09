@@ -4,40 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopEase - Home</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
   <!-- Navigation -->
-  <nav class="bg-white shadow-lg">
+  <nav class="bg-white shadow-xl">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between">
-        <div class="flex space-x-7">
-          <div>
-            <a href="index.html" class="flex items-center py-4 px-2">
-              <span class="font-semibold text-gray-500 text-lg">ShopEase</span>
-            </a>
-          </div>
+        
+        <!-- Logo Section -->
+        <div class="flex space-x-3 items-center py-4 px-2">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="images/logo_new.avif" alt="ShopEase Logo" class="h-8 w-8 object-contain">
+            <span class="font-bold text-gray-900 text-xl">ShopEase</span>
+          </a>
         </div>
+  
         <!-- Primary Nav -->
-        <div class="hidden md:flex items-center space-x-1">
+        <div class="hidden md:flex items-center space-x-6">
           <a href="index.html" class="nav-link font-medium">Home</a>
           <a href="about.html" class="nav-link">About</a>
           <a href="products.html" class="nav-link">Products</a>
           <a href="contact.html" class="nav-link">Contact</a>
           <a href="references.html" class="nav-link">References</a>
         </div>
+  
         <!-- Mobile button -->
         <div class="md:hidden flex items-center">
           <button id="menu-btn" class="outline-none mobile-menu-button">
-            <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
               <path d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
         </div>
       </div>
     </div>
+  
     <!-- Mobile Menu -->
     <div class="hidden mobile-menu" id="mobile-menu">
       <ul>
@@ -49,6 +55,7 @@
       </ul>
     </div>
   </nav>
+  
 
   <!-- Hero Section -->
   <section class="bg-[url('/images/head.avif')] bg-white/20 backdrop-blur-sm z-20 bg-cover bg-center h-[90vh] text-white py-20">
@@ -95,17 +102,28 @@
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center">
+        
+        <!-- Text Content -->
         <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
           <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
-          <p class="text-gray-600 mb-6">ShopEase was founded in 2020 with a simple mission: to make online shopping easy, fast, and enjoyable for everyone. Our team of passionate professionals works tirelessly to bring you the best products at competitive prices.</p>
-          <a href="about.html" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 inline-block">Learn More</a>
+          <p class="text-gray-600 mb-6">
+            ShopEase was founded in 2020 with a simple mission: to make online shopping easy, fast, and enjoyable for everyone.
+            Our team of passionate professionals works tirelessly to bring you the best products at competitive prices.
+          </p>
+          <a href="about.html" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 inline-block">
+            Learn More
+          </a>
         </div>
+  
+        <!-- Image Section -->
         <div class="md:w-1/2">
-          <div class="bg-gray-200 h-64 rounded-lg"></div>
+          <img src="images/head_n.jpg" alt="Our team working at ShopEase" class="w-full h-64 object-cover rounded-lg shadow-lg">
         </div>
+  
       </div>
     </div>
   </section>
+  
 
   <!-- Featured Products Section -->
   <section class="py-16 bg-white">
@@ -113,20 +131,26 @@
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Featured Products</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         <div class="bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300">
-          <div class="bg-gray-200 h-48 rounded-lg mb-4"></div>
-          <h3 class="text-xl font-semibold mb-2">Premium Headphones</h3>
+          <div class="h-48 overflow-hidden rounded-lg mb-4">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Premium Headphones" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Noise Cancelling Headphones</h3>
           <p class="text-gray-600 mb-4">Experience crystal clear sound with our premium headphones</p>
           <span class="text-blue-600 font-bold">$199.99</span>
         </div>
         <div class="bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300">
-          <div class="bg-gray-200 h-48 rounded-lg mb-4"></div>
+          <div class="h-48 overflow-hidden rounded-lg mb-4">
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Smart Watch" class="w-full h-full object-cover">
+          </div>
           <h3 class="text-xl font-semibold mb-2">Smart Watch</h3>
           <p class="text-gray-600 mb-4">Stay connected and track your fitness with our latest smart watch</p>
           <span class="text-blue-600 font-bold">$249.99</span>
         </div>
         <div class="bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300">
-          <div class="bg-gray-200 h-48 rounded-lg mb-4"></div>
-          <h3 class="text-xl font-semibold mb-2">Wireless Earbuds</h3>
+          <div class="h-48 overflow-hidden rounded-lg mb-4">
+            <img src="https://images.unsplash.com/photo-1526430752879-b9eb53fbd772?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Wireless Earbuds" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Premium Tablet</h3>
           <p class="text-gray-600 mb-4">Premium sound quality with complete wireless freedom</p>
           <span class="text-blue-600 font-bold">$129.99</span>
         </div>
@@ -147,9 +171,10 @@
           <a href="about.html" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300">Learn More About Us</a>
         </div>
         <div class="md:w-1/2">
-          <div class="bg-blue-100 rounded-lg p-8">
-            <i class="fas fa-store text-blue-600 text-6xl mx-auto block text-center"></i>
-          </div>
+          <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+               alt="Our store" 
+               class="w-full h-auto rounded-lg shadow-lg object-cover"
+               style="min-height: 300px;">
         </div>
       </div>
     </div>
@@ -161,8 +186,8 @@
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Featured Products</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-          <div class="bg-gray-200 h-48 flex items-center justify-center">
-            <i class="fas fa-tshirt text-gray-400 text-5xl"></i>
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Premium T-Shirt" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Premium T-Shirt</h3>
@@ -170,20 +195,20 @@
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-          <div class="bg-gray-200 h-48 flex items-center justify-center">
-            <i class="fas fa-laptop text-gray-400 text-5xl"></i>
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Ultrabook Pro" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Ultrabook Pro</h3>
+            <h3 class="text-xl font-semibold mb-2">Designer Jeans</h3>
             <p class="text-gray-600 mb-4">Powerful and portable</p>
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-          <div class="bg-gray-200 h-48 flex items-center justify-center">
-            <i class="fas fa-headphones text-gray-400 text-5xl"></i>
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Noise-Canceling Headphones" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Noise-Canceling Headphones</h3>
+            <h3 class="text-xl font-semibold mb-2">Winter Jacket</h3>
             <p class="text-gray-600 mb-4">Immersive sound experience</p>
           </div>
         </div>
@@ -195,14 +220,21 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-8">
+  <footer class="bg-gray-800 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="flex flex-col md:flex-row justify-between">
-        <div class="mb-6 md:mb-0">
-          <h3 class="text-xl font-semibold mb-4">ShopEase</h3>
-          <p class="text-gray-400">Your trusted online shopping destination</p>
+        
+        <!-- ShopEase Section with Logo, Improved Alignment -->
+        <div class="mb-6 md:mb-0 flex items-center">
+          <img src="images/logo_new.avif" alt="ShopEase Logo" class="h-20 w-20 object-contain mr-4">
+          <div>
+            <h3 class="text-xl font-semibold mb-2">ShopEase</h3>
+            <p class="text-gray-400">Your trusted online shopping destination</p>
+          </div>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+        
+        <!-- Quick Links, Help, Legal, and Connect With Us Sections -->
+        <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
           <div>
             <h4 class="text-sm font-semibold uppercase mb-4">Quick Links</h4>
             <ul class="space-y-2">
@@ -227,24 +259,39 @@
               <li><a href="references.html" class="footer-link">References</a></li>
             </ul>
           </div>
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-4">Connect With Us</h4>
+            <div class="flex space-x-4 mb-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <form class="mt-4">
+              <label for="email" class="block text-sm text-gray-400 mb-2">Subscribe to our newsletter</label>
+              <div class="flex">
+                <input type="email" id="email" placeholder="Your email" class="bg-gray-700 text-white px-4 py-2 rounded-l focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-r hover:bg-blue-700 transition duration-300">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm">&copy; 2023 ShopEase. All rights reserved.</p>
-        <div class="flex space-x-6 mt-4 md:mt-0">
-          <a href="#" class="text-gray-400 hover:text-white">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="text-gray-400 hover:text-white">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="text-gray-400 hover:text-white">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
+      
+      <div class="border-t border-gray-700 mt-8 pt-8">
+        <p class="text-gray-400 text-sm text-center">&copy; 2023 ShopEase. All rights reserved.</p>
       </div>
     </div>
   </footer>
+  
+  
 
   <script src="script.js"></script>
 </body>
