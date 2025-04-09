@@ -1,0 +1,119 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation Styles */
+.nav-link {
+  padding: 1rem 0.5rem;
+  color: #6b7280;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #2563eb;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-button {
+  outline: none;
+}
+
+/* Footer Styles */
+.footer-link {
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.75rem 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* Form Styles */
+input, textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5);
+}
+
+/* Utility Classes */
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 50;
+  }
+  
+  .mobile-menu ul {
+    width: 100%;
+  }
+  
+  .mobile-menu li {
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .mobile-menu a {
+    display: block;
+    padding: 1rem;
+    color: #1f2937;
+  }
+  
+  .mobile-menu a:hover {
+    background-color: #f3f4f6;
+  }
+}
