@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - References</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation (same as index.html) -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <div>
+            <a href="index.html" class="flex items-center py-4 px-2">
+              <span class="font-semibold text-gray-500 text-lg">ShopEase</span>
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="references.html" class="nav-link font-medium">References</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hidden mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Home</a></li>
+        <li><a href="about.html" class="block px-4 py-2 text-sm hover:bg-gray-200">About</a></li>
+        <li><a href="products.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Products</a></li>
+        <li><a href="contact.html" class="block px-4 py-2 text-sm hover:bg-gray-200">Contact</a></li>
+        <li><a href="references.html" class="block px-4 py-2 text-sm hover:bg-gray-200">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- References Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-12">References</h1>
+      
+      <div class="bg-gray-100 p-8 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-6">Resources Used</h2>
+        
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white rounded-lg overflow-hidden">
+            <thead class="bg-gray-200">
+              <tr>
+                <th class="py-3 px-4 text-left">Resource</th>
+                <th class="py-3 px-4 text-left">Type</th>
+                <th class="py-3 px-4 text-left">Description</th>
+                <th class="py-3 px-4 text-left">Link</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr>
+                <td class="py-4 px-4">Tailwind CSS</td>
+                <td class="py-4 px-4">CSS Framework</td>
+                <td class="py-4 px-4">Utility-first CSS framework for rapid UI development</td>
+                <td class="py-4 px-4">
+                  <a href="https://tailwindcss.com/" class="text-blue-600 hover:underline" target="_blank">tailwindcss.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-4 px-4">Font Awesome</td>
+                <td class="py-4 px-4">Icon Library</td>
+                <td class="py-4 px-4">Popular icon toolkit and framework</td>
+                <td class="py-4 px-4">
+                  <a href="https://fontawesome.com/" class="text-blue-600 hover:underline" target="_blank">fontawesome.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-4 px-4">Google Fonts</td>
+                <td class="py-4 px-4">Typography</td>
+                <td class="py-4 px-4">Library of free licensed font families</td>
+                <td class="py-4 px-4">
+                  <a href="https://fonts.google.com/" class="text-blue-600 hover:underline" target="_blank">fonts.google.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-4 px-4">Unsplash</td>
+                <td class="py-4 px-4">Stock Photos</td>
+                <td class="py-4 px-4">Source of freely-usable images</td>
+                <td class="py-4 px-4">
+                  <a href="https://unsplash.com/" class="text-blue-600 hover:underline" target="_blank">unsplash.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-4 px-4">Google Maps</td>
+                <td class="py-4 px-4">Mapping</td>
+                <td class="py-4 px-4">Web mapping service for location embedding</td>
+                <td class="py-4 px-4">
+                  <a href="https://www.google.com/maps" class="text-blue-600 hover:underline" target="_blank">google.com/maps</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="text-xl font-semibold mb-4">Additional Credits</h3>
+          <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Color palette inspired by Tailwind CSS default colors</li>
+            <li>Layout concepts adapted from modern e-commerce best practices</li>
+            <li>Product descriptions based on popular e-commerce sites</li>
+            <li>Responsive design patterns following mobile-first principles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as index.html) -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-xl font-semibold mb-4">ShopEase</h3>
+          <p class="text-gray-400">Your trusted online shopping destination</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="about.html" class="footer-link">About</a></li>
+              <li><a href="products.html" class="footer-link">Products</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-4">Help</h4>
+            <ul class="space-y-2">
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+              <li><a href="#" class="footer-link">FAQs</a></li>
+              <li><a href="#" class="footer-link">Shipping</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold uppercase mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="references.html" class="footer-link">References</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">&copy; 2023 ShopEase. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
