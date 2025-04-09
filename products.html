@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopEase - Products</title>
   <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
-  <!-- Navigation (same as index.html) -->
+  <!-- Navigation -->
   <nav class="bg-white shadow-lg">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between">
@@ -47,225 +48,221 @@
   </nav>
 
   <!-- Products Section -->
-  <div class="container mx-auto px-6 py-12">
-    <h1 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Products</h1>
-    
-    <div class="flex flex-col md:flex-row">
-      <!-- Sidebar Categories -->
-      <div class="md:w-1/4 mb-8 md:mb-0 md:pr-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h2 class="text-xl font-semibold mb-4">Categories</h2>
-          <ul class="space-y-2">
-            <li><a href="#electronics" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Electronics</a></li>
-            <li><a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Home & Kitchen</a></li>
-            <li><a href="#fashion" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Fashion</a></li>
-            <li><a href="#beauty" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Beauty</a></li>
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Products</h1>
+      
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- Sidebar with categories -->
+        <div class="w-full md:w-1/4 bg-white p-6 rounded-lg shadow-md">
+          <h2 class="text-xl font-semibold mb-4 border-b pb-2">Categories</h2>
+          <ul class="space-y-3">
+            <li>
+              <a href="#" class="category-link flex items-center text-blue-600 hover:text-blue-800 active" data-category="all">
+                <i class="fas fa-boxes mr-2"></i>
+                All Products
+              </a>
+            </li>
+            <li>
+              <a href="#" class="category-link flex items-center text-blue-600 hover:text-blue-800" data-category="electronics">
+                <i class="fas fa-laptop mr-2"></i>
+                Electronics
+              </a>
+            </li>
+            <li>
+              <a href="#" class="category-link flex items-center text-blue-600 hover:text-blue-800" data-category="clothing">
+                <i class="fas fa-tshirt mr-2"></i>
+                Clothing
+              </a>
+            </li>
+            <li>
+              <a href="#" class="category-link flex items-center text-blue-600 hover:text-blue-800" data-category="home-kitchen">
+                <i class="fas fa-home mr-2"></i>
+                Home & Kitchen
+              </a>
+            </li>
+            <li>
+              <a href="#" class="category-link flex items-center text-blue-600 hover:text-blue-800" data-category="beauty">
+                <i class="fas fa-spa mr-2"></i>
+                Beauty
+              </a>
+            </li>
           </ul>
         </div>
-      </div>
 
-      <!-- Product Tables -->
-      <div class="md:w-3/4">
-        <!-- Electronics Category -->
-        <section id="electronics" class="mb-12">
-          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">Electronics</h2>
-          <div class="overflow-x-auto">
-            <table class="min-w-full bg-white rounded-lg overflow-hidden">
-              <thead class="bg-gray-100">
-                <tr>
-                  <th class="py-3 px-4 text-left">Product</th>
-                  <th class="py-3 px-4 text-left">Description</th>
-                  <th class="py-3 px-4 text-left">Price</th>
-                  <th class="py-3 px-4 text-left">Rating</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-200">
-                <tr>
-                  <td class="py-4 px-4">Smartphone X</td>
-                  <td class="py-4 px-4">6.5" AMOLED display, 128GB storage</td>
-                  <td class="py-4 px-4">$699.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Wireless Earbuds</td>
-                  <td class="py-4 px-4">Noise cancelling, 20hr battery</td>
-                  <td class="py-4 px-4">$129.99</td>
-                  <td class="py-4 px-4">★★★★★</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">4K Smart TV</td>
-                  <td class="py-4 px-4">55" LED, HDR, Smart features</td>
-                  <td class="py-4 px-4">$499.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Laptop Pro</td>
-                  <td class="py-4 px-4">15.6", 16GB RAM, 512GB SSD</td>
-                  <td class="py-4 px-4">$999.99</td>
-                  <td class="py-4 px-4">★★★★★</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Smart Watch</td>
-                  <td class="py-4 px-4">Fitness tracking, heart rate monitor</td>
-                  <td class="py-4 px-4">$199.99</td>
-                  <td class="py-4 px-4">★★★☆☆</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
+        <!-- Unified Product Grid -->
+        <div class="w-full md:w-3/4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Electronics Products (5 items) -->
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="electronics">
+              <div class="bg-blue-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Smartphone" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Premium Smartphone</h3>
+              <p class="text-blue-600 font-medium">$799</p>
+            </div>
 
-        <!-- Home & Kitchen Category -->
-        <section id="home" class="mb-12">
-          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">Home & Kitchen</h2>
-          <div class="overflow-x-auto">
-            <table class="min-w-full bg-white rounded-lg overflow-hidden">
-              <thead class="bg-gray-100">
-                <tr>
-                  <th class="py-3 px-4 text-left">Product</th>
-                  <th class="py-3 px-4 text-left">Description</th>
-                  <th class="py-3 px-4 text-left">Price</th>
-                  <th class="py-3 px-4 text-left">Rating</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-200">
-                <tr>
-                  <td class="py-4 px-4">Air Fryer</td>
-                  <td class="py-4 px-4">5.8QT capacity, digital controls</td>
-                  <td class="py-4 px-4">$89.99</td>
-                  <td class="py-4 px-4">★★★★★</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Blender</td>
-                  <td class="py-4 px-4">1500W, 8-speed control</td>
-                  <td class="py-4 px-4">$59.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Coffee Maker</td>
-                  <td class="py-4 px-4">12-cup programmable</td>
-                  <td class="py-4 px-4">$49.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Cookware Set</td>
-                  <td class="py-4 px-4">10-piece non-stick</td>
-                  <td class="py-4 px-4">$129.99</td>
-                  <td class="py-4 px-4">★★★★★</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Robot Vacuum</td>
-                  <td class="py-4 px-4">Smart mapping, self-charging</td>
-                  <td class="py-4 px-4">$249.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="electronics">
+              <div class="bg-blue-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Laptop" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Ultrabook Laptop</h3>
+              <p class="text-blue-600 font-medium">$1299</p>
+            </div>
 
-        <!-- Fashion Category -->
-        <section id="fashion" class="mb-12">
-          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">Fashion</h2>
-          <div class="overflow-x-auto">
-            <table class="min-w-full bg-white rounded-lg overflow-hidden">
-              <thead class="bg-gray-100">
-                <tr>
-                  <th class="py-3 px-4 text-left">Product</th>
-                  <th class="py-3 px-4 text-left">Description</th>
-                  <th class="py-3 px-4 text-left">Price</th>
-                  <th class="py-3 px-4 text-left">Rating</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-200">
-                <tr>
-                  <td class="py-4 px-4">Men's Jeans</td>
-                  <td class="py-4 px-4">Slim fit, stretch denim</td>
-                  <td class="py-4 px-4">$49.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Women's Dress</td>
-                  <td class="py-4 px-4">Summer floral, midi length</td>
-                  <td class="py-4 px-4">$39.99</td>
-                  <td class="py-4 px-4">★★★★★</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Running Shoes</td>
-                  <td class="py-4 px-4">Lightweight, cushioned</td>
-                  <td class="py-4 px-4">$79.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Leather Jacket</td>
-                  <td class="py-4 px-4">Genuine leather, biker style</td>
-                  <td class="py-4 px-4">$199.99</td>
-                  <td class="py-4 px-4">★★★★★</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Wool Coat</td>
-                  <td class="py-4 px-4">Winter warm, double-breasted</td>
-                  <td class="py-4 px-4">$149.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="electronics">
+              <div class="bg-blue-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Headphones" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Noise Cancelling Headphones</h3>
+              <p class="text-blue-600 font-medium">$349</p>
+            </div>
 
-        <!-- Beauty Category -->
-        <section id="beauty">
-          <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">Beauty</h2>
-          <div class="overflow-x-auto">
-            <table class="min-w-full bg-white rounded-lg overflow-hidden">
-              <thead class="bg-gray-100">
-                <tr>
-                  <th class="py-3 px-4 text-left">Product</th>
-                  <th class="py-3 px-4 text-left">Description</th>
-                  <th class="py-3 px-4 text-left">Price</th>
-                  <th class="py-3 px-4 text-left">Rating</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-200">
-                <tr>
-                  <td class="py-4 px-4">Facial Serum</td>
-                  <td class="py-4 px-4">Vitamin C, brightening</td>
-                  <td class="py-4 px-4">$29.99</td>
-                  <td class="py-4 px-4">★★★★★</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Hair Dryer</td>
-                  <td class="py-4 px-4">Ionic, 1875W</td>
-                  <td class="py-4 px-4">$59.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Lipstick Set</td>
-                  <td class="py-4 px-4">5 matte shades</td>
-                  <td class="py-4 px-4">$24.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Perfume</td>
-                  <td class="py-4 px-4">Floral scent, 3.4oz</td>
-                  <td class="py-4 px-4">$89.99</td>
-                  <td class="py-4 px-4">★★★★★</td>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4">Makeup Brushes</td>
-                  <td class="py-4 px-4">12-piece synthetic set</td>
-                  <td class="py-4 px-4">$34.99</td>
-                  <td class="py-4 px-4">★★★★☆</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="electronics">
+              <div class="bg-blue-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Smart Watch" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Smart Watch</h3>
+              <p class="text-blue-600 font-medium">$299</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="electronics">
+              <div class="bg-blue-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1526430752879-b9eb53fbd772?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Tablet" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Premium Tablet</h3>
+              <p class="text-blue-600 font-medium">$599</p>
+            </div>
+
+            <!-- Clothing Products (5 items) -->
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="clothing">
+              <div class="bg-pink-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="T-Shirt" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Premium T-Shirt</h3>
+              <p class="text-blue-600 font-medium">$39</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="clothing">
+              <div class="bg-pink-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Jeans" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Designer Jeans</h3>
+              <p class="text-blue-600 font-medium">$89</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="clothing">
+              <div class="bg-pink-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Jacket" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Winter Jacket</h3>
+              <p class="text-blue-600 font-medium">$129</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="clothing">
+              <div class="bg-pink-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Sneakers" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Running Sneakers</h3>
+              <p class="text-blue-600 font-medium">$99</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="clothing">
+              <div class="bg-pink-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Dress" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Summer Dress</h3>
+              <p class="text-blue-600 font-medium">$69</p>
+            </div>
+
+            <!-- Home & Kitchen Products (5 items) -->
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="home-kitchen">
+              <div class="bg-green-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Blender" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Professional Blender</h3>
+              <p class="text-blue-600 font-medium">$89</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="home-kitchen">
+              <div class="bg-green-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1583773119951-6a8c07c5787a?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Cookware Set" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Premium Cookware Set</h3>
+              <p class="text-blue-600 font-medium">$249</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="home-kitchen">
+              <div class="bg-green-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Coffee Maker" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Espresso Machine</h3>
+              <p class="text-blue-600 font-medium">$179</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="home-kitchen">
+              <div class="bg-green-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd50?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Air Fryer" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Digital Air Fryer</h3>
+              <p class="text-blue-600 font-medium">$129</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="home-kitchen">
+              <div class="bg-green-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1556910639-9e8a8d7c590b?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Knife Set" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Chef's Knife Set</h3>
+              <p class="text-blue-600 font-medium">$149</p>
+            </div>
+
+            <!-- Beauty Products (5 items) -->
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="beauty">
+              <div class="bg-purple-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Skincare Set" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Luxury Skincare Set</h3>
+              <p class="text-blue-600 font-medium">$99</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="beauty">
+              <div class="bg-purple-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Perfume" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Designer Perfume</h3>
+              <p class="text-blue-600 font-medium">$129</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="beauty">
+              <div class="bg-purple-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Makeup Palette" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Professional Makeup Palette</h3>
+              <p class="text-blue-600 font-medium">$59</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="beauty">
+              <div class="bg-purple-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1608248543803-ba9f422a3b7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Hair Dryer" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Ionic Hair Dryer</h3>
+              <p class="text-blue-600 font-medium">$89</p>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-category="beauty">
+              <div class="bg-purple-100 p-4 rounded-lg mb-4 text-center">
+                <img src="https://images.unsplash.com/photo-1595341595379-cf2df1c6a0af?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&fit=crop&q=80" alt="Nail Polish" class="w-full h-48 object-cover rounded-lg">
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Gel Nail Polish Set</h3>
+              <p class="text-blue-600 font-medium">$49</p>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Footer (same as index.html) -->
+  <!-- Footer -->
   <footer class="bg-gray-800 text-white py-8">
     <div class="container mx-auto px-6">
       <div class="flex flex-col md:flex-row justify-between">
